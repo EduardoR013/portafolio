@@ -1,0 +1,755 @@
+/*
+  Oscar Angel Espinoza Reyes.
+  GitHub: https://github.com/oscar-er
+  Sitio Web: https://weboscarreyes.alwaysdata.net
+*/
+@import url("https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+::selection {
+  background-color: #1b93b3;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Muli", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #75797D;
+  text-align: left;
+  background-image: linear-gradient(to top right, rgb(252, 252, 252), rgb(250, 250, 250), rgb(249, 249, 249), rgb(247, 247, 247), rgb(246, 246, 246), rgb(244, 244, 244), rgb(243, 243, 243), rgb(241, 241, 241), rgb(240, 240, 240), rgb(238, 238, 238), rgb(237, 237, 237), rgb(235, 235, 235));
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 0.5rem;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
+  line-height: 1.2;
+  color: #343a40;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+label,
+p {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #75797D;
+  text-align: justify;
+}
+
+a {
+  color: #75797D;
+}
+
+small {
+  color: #75797D;
+}
+
+a:hover {
+  color: #1c82c3;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justift {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.button-primary {
+  background-color: #126786;
+  border-style: none;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font: 500 18px "Roboto";
+  color: #fff;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.button-primary:hover {
+  background-color: #3ba3b5;
+  color: #fff;
+}
+
+.button-secondary {
+  font: 500 20px "Roboto";
+  font-weight: bold;
+  color: #3188b4;
+}
+
+.button-secondary:hover {
+  color: #9f9f9f;
+}
+
+.back {
+  color: #33569c;
+}
+
+.p-l {
+  padding-left: 2em;
+}
+
+.list-style-404 li {
+  list-style: initial;
+}
+
+.icon-exclamation {
+  position: absolute;
+  font-size: 10em;
+  color: #b39a18;
+  padding-left: 0.7em;
+}
+
+.main-container-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #314870;
+  width: 17rem;
+  position: fixed;
+  min-height: 100vh;
+  overflow-y: scroll;
+  height: 100%;
+  scrollbar-color: #314870 #314870;
+}
+
+.main-container-nav .a-profile {
+  padding-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.main-container-nav .circle-image {
+  max-width: 12rem;
+  max-height: 12rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.main-footer .circle-image-footer {
+  max-width: 12rem;
+  max-height: 12rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.header-container-fixed {
+  display: none;
+}
+
+.a-profile label {
+  text-transform: uppercase;
+  text-align: center;
+  font: 500 26px "Roboto";
+  color: #fff;
+}
+
+.div-ul {
+  display: block;
+  padding: 2rem 1rem;
+}
+
+.main-container-nav .container-nav-ul li {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  line-height: 3.3;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.container-nav-ul a {
+  color: #c9c9c9;
+}
+
+.container-nav-ul a:hover {
+  color: #fff;
+}
+
+.main-container-nav>.div-social-icons {
+  text-align: center;
+  color: #fff;
+  margin-top: auto;
+}
+
+.main-container-nav .div-social-icons small {
+  display: flex;
+  flex-direction: column;
+  font: 500 16px "Roboto";
+  line-height: 1.5;
+  color: #fff;
+}
+
+.div-social-icons .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #38b2d9;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.div-social-icons .social-icon:hover {
+  background-color: #fff;
+  color: #38b2d9;
+}
+
+main.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+hr.main-container-hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border: 1px #d6d8da solid;
+}
+
+.section-header-background {
+  background: url("../containers/img/briefcase/contacto.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 65vh;
+}
+
+.section-header-background:before {
+  content: '';
+  position: absolute;
+  padding: 0;
+  left: 17rem;
+  right: 0;
+  top: 0;
+  bottom: auto;
+  min-height: 65vh;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.section-header-background .heading-section {
+  position: absolute;
+  z-index: 10;
+  padding-left: 20rem;
+  padding-top: 8rem;
+}
+
+.heading-section>.heading-text-primary, .subheading {
+  color: #f2f2f2;
+}
+
+.heading-section .heading-text-primary span {
+  color: #f0e3c8;
+}
+
+.main-container-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-left: 20rem;
+  padding-right: 50px;
+  text-align: justify;
+}
+
+.space-containers {
+  padding-left: 20rem;
+  padding-top: 20px;
+}
+
+.h2-header:before {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background: #5e9bc3;
+  position: static;
+  display: inline-block;
+  top: -2px;
+}
+
+div.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  border: 1px #d6d6d6 solid;
+  border-radius: 9px;
+  box-shadow: 0 0 2px #cdcdcd;
+  margin-bottom: 40px;
+}
+
+div.card div.header-card {
+  background-color: #F7F7F7;
+  border-radius: 9px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+div.card div.body-card {
+  background-color: transparent;
+  border-top: 1px #d6d6d6 solid;
+  padding: 2rem;
+}
+
+div.card div.body-card span {
+  color: #3188b4;
+  font-weight: bold;
+}
+
+div.div-icons-contact {
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+
+div.div-icons-contact .telphone,
+div.div-icons-contact .email,
+div.div-icons-contact .cv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  border-style: none;
+}
+
+div.div-icons-contact .telphone:hover,
+div.div-icons-contact .email:hover,
+div.div-icons-contact .cv:hover {
+  transform: scale(1.1);
+}
+
+div.div-icons-contact .icon-contact {
+  background-color: transparent;
+  color: #38b2d9;
+  font-size: 2em;
+  text-align: center;
+}
+
+div.two-container {
+  display: flex;
+  width: 100%;
+}
+
+.main-container-section div.card-briefcase {
+  display: flex;
+  width: 100%;
+  height: 25rem;
+  margin: 5px;
+  margin-bottom: 40px;
+  border: 1px #cbcbcb solid;
+  overflow: hidden;
+}
+
+.main-container-section div.card-briefcase:hover .card-container {
+  top: 0;
+}
+
+.main-container-section div.card-briefcase div.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(16, 70, 92, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  position: relative;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.main-container-section div.card-briefcase p,
+.main-container-section div.card-briefcase small {
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+.main-container-section div.card-briefcase h3 {
+  text-align: center;
+  padding-top: 1em;
+  color: #fff;
+}
+
+div.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding-top: 2rem;
+  background-color: rgba(31, 31, 31, 0.6);
+}
+
+div.modal div.modal-container {
+  margin: auto;
+  overflow: auto;
+  width: 80%;
+  height: 75%;
+  padding: 2rem;
+  background-color: #ebebeb;
+  border-top: 2rem #4386a3 solid;
+  border-radius: 9px;
+  box-shadow: 5px 5px 15px rgba(26, 26, 26, 0.79);
+}
+
+div.modal div.modal-container div.modal-header,
+div.modal div.modal-container div.modal-header h3 {
+  padding-bottom: 1rem;
+  color: #0c90a8;
+}
+
+div.modal div.modal-container div.modal-header span {
+  float: right;
+  vertical-align: middle;
+}
+
+div.modal div.modal-container div.modal-header span:hover {
+  color: #c9c9c9;
+  cursor: pointer;
+}
+
+div.modal div.modal-container div.modal-body p,
+div.modal div.modal-container div.modal-body label {
+  font: 400 16px "Roboto";
+  text-align: justify;
+}
+
+div.modal div.modal-container div.modal-body h1,
+div.modal div.modal-container div.modal-body h2,
+div.modal div.modal-container div.modal-body h3,
+div.modal div.modal-container div.modal-body h4,
+div.modal div.modal-container div.modal-body h5 {
+  padding-top: 1em;
+}
+
+div.modal div.modal-container div.modal-body img {
+  width: 33%;
+}
+
+div.progressbar-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+div.progressbar-container progress {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+div.progressbar-container progress,
+div.progressbar-container progress::-webkit-progress-bar {
+  width: 95%;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #f0f0f0;
+}
+
+div.progressbar-container progress::-moz-progress-bar {
+  background-image: linear-gradient(to top right, rgb(31, 123, 184), rgb(47, 130, 186), rgb(62, 138, 188), rgb(78, 145, 189), rgb(94, 152, 191), rgb(110, 160, 193), rgb(125, 167, 195), rgb(141, 175, 197), rgb(157, 182, 199), rgb(173, 189, 200), rgb(188, 197, 202), rgb(204, 204, 204));
+  border-radius: 4px;
+}
+
+div.progressbar-container progress::-webkit-progress-value {
+  background: -webkit-linear-gradient(left, #4493ad, #87a1b3);
+  border-radius: 4px;
+}
+
+footer.main-footer {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav.main-container-nav {
+    display: flex;
+    position: static;
+    min-height: 1vh;
+    width: 100%;
+  }
+
+  span.profile-hidden {
+    display: none;
+  }
+
+  nav.main-container-nav span.header-container-fixed {
+    display: flex;
+    position: fixed;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(12, 85, 128), rgb(18, 91, 135), rgb(24, 97, 141), rgb(31, 104, 148), rgb(37, 110, 155), rgb(43, 116, 161), rgb(49, 122, 168), rgb(55, 128, 174), rgb(61, 134, 181), rgb(68, 141, 188), rgb(74, 147, 194), rgb(80, 153, 201));
+    min-height: 4rem;
+  }
+
+  nav.main-container-nav span.header-container-fixed span {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font: 400 20px "Roboto";
+    text-transform: uppercase;
+    color: #fff;
+    width: 80%;
+  }
+
+  nav.main-container-nav span.header-container-fixed button {
+    border-style: none;
+    background-color: transparent;
+    color: #f1f1f1;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    font-size: 26px;
+  }
+
+  .div-ul {
+    display: none;
+  }
+
+  .view {
+    display: flex;
+    position: fixed;
+    margin-top: 4rem;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(12, 85, 128), rgb(18, 91, 135), rgb(24, 97, 141), rgb(31, 104, 148), rgb(37, 110, 155), rgb(43, 116, 161), rgb(49, 122, 168), rgb(55, 128, 174), rgb(61, 134, 181), rgb(68, 141, 188), rgb(74, 147, 194), rgb(80, 153, 201));
+  }
+
+  nav.main-container-nav div.div-social-icons {
+    display: none;
+  }
+
+  .float-right {
+    float: none;
+  }
+
+  .float-left {
+    float: none;
+  }
+
+  .section-header-background {
+    background-attachment: fixed;
+    margin-top: 1.89rem;
+  }
+
+  .section-header-background:before {
+    display: none;
+  }
+
+  .section-header-background .heading-section {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-left: 1rem;
+    height: 100%;
+  }
+
+  .subheading {
+    width: 100%;
+  }
+
+  .space-containers {
+    padding: 1rem;
+    padding-top: 4rem;
+  }
+
+  section.main-container-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+  }
+
+  div.card {
+    width: 100%;
+  }
+
+  div.div-icons-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.div-icons-contact .telphone,
+  div.div-icons-contact .email,
+  div.div-icons-contact .cv {
+    padding-bottom: 4rem;
+  }
+
+  div.two-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-container-section div.card-briefcase {
+    width: 100%;
+    height: 25rem;
+    border: 1px #cbcbcb solid;
+  }
+
+  .main-container-section div.card-briefcase div.card-container {
+    top: 0;
+    position: static;
+  }
+
+  div.modal div.modal-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.modal div.modal-container div.modal-body img {
+    width: 100%;
+  }
+
+  footer.main-footer {
+    display: flex;
+    background: url("../containers/img/briefcase/contacto.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 80vh;
+  }
+
+  footer.main-footer:before {
+    display: none;
+  }
+
+  footer.main-footer div.footer-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  footer.main-footer div.footer-content div.div-social-icons {
+    margin-top: 1rem;
+  }
+
+  footer.main-footer label,
+  footer.main-footer p,
+  footer.main-footer a {
+    color: #fff;
+    font: 600 20px "Roboto";
+    line-height: 2.5;
+  }
+
+  footer.main-footer small {
+    color: #fff;
+  }
+
+  .icon-exclamation{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 970px) {
+  div.div-icons-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.div-icons-contact .telphone,
+  div.div-icons-contact .email,
+  div.div-icons-contact .cv {
+    padding-bottom: 2rem;
+  }
+
+  .float-right {
+    float: none;
+  }
+
+  .float-left {
+    float: none;
+  }
+
+  div.two-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-container-section div.card-briefcase div.card-container {
+    top: 0;
+    position: static;
+  }
+
+  div.modal div.modal-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.modal div.modal-container div.modal-body img {
+    width: 100%;
+  }
+
+}
