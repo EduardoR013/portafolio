@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, , user-scalable=no" />
+  <meta name="description" content="Mi portafolio de evidencias" />
+  <link rel="shortcut icon" type="image/png" sizes="16x16" href="./assets/containers/img/perfil/favicon.png" />
+  <!-- Estilos creados en CSS3 (La carpeta se ubica en /assets/containers/css/)-->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <title>Mi portafolio de evidencias</title>
+</head>
+<!--
+  La etiqueta body invoca a una función js navbarToggle(elementoUno, elementoDos) para permitir desplegar el nav en responsive design
+  recibe 2 parametros: 1. Nombre del elemento que desplegara el navbar. 2. La lista que se mostrará.
+-->
+
+<body id="pageTop" onload="navbarToggle('view-menu', 'nav-ul');">
+  <nav class="main-container-nav">
+    <a href="#pageTop" class="a-profile">
+      <span class="profile-hidden">
+        <img class="circle-image" src="./assets/containers/img/perfil/imagen_perfil.png" alt="Oscar Reyes" />
+        <label>NOMBRE/APELLIDO</label>
+      </span>
+    </a>
+    <span class="header-container-fixed">
+      <span class="text-header">portafolio evidencia</span>
+      <!-- elementoUno para invocar a la funcion del body-->
+      <button type="button" id="view-menu"><i class="fa fa-bars"></i> </button>
+    </span>
+    <!-- elementoDos para invocar a la funcion del body-->
+    <div class="div-ul" id="nav-ul">
+      <ul class="container-nav-ul">
+        <li><a href="#about"><i class="far fa-address-card"></i> Sobre mí</a></li>
+        <li><a href="#education"><i class="fa fa-graduation-cap"></i> Educación</a></li>
+        <li><a href="#briefcase"><i class="fa fa-briefcase"></i> Portafolio</a></li>
+        <li><a href="#skills"><i class="fa fa-server"></i> Habilidades</a></li>
+        <li><a href="#awards"><i class="fas fa-award"></i> Logros</a></li>
+      </ul>
+    </div>
+    <div class="div-social-icons">
+      <a class="social-icon" href="#" target="_blank" title="Liked In"><i class="fab fa-linkedin-in"></i></a>
+      <a class="social-icon" href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a class="social-icon" href="#"><i class="fab fa-facebook-f" title="Facebook"></i></a>
+      <a class="social-icon" href="#" title="Mail - Gmail"><i class="fa fa-envelope"></i></a>
+      <small>Oscar Angel Espinoza Reyes &copy</small>
+      <small>Puedes modificar esta platilla</small>
+    </div>
+  </nav>
+  <main class="main-container">
+    <section class="section-header-background" id="about">
+      <div class="heading-section">
+        <h1 class="heading-text-primary">Nombre<span class="heading-text-secondary"> Apellidos</span></h1>
+        <h3 class="subheading">Título</h3>
+      </div>
+    </section>
+    <div class="space-containers">
+      <h2>Sobre mí</h2>
+      <span class="h2-header"></span>
+    </div>
+    <section class="main-container-section">
+      <div class="card">
+        <div class="header-card">
+          <h3>Título</h3>
+        </div>
+        <div class="body-card">
+          <p>
+            <i class="fa fa-quote-left"></i>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <i class="fa fa-quote-right"></i>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="header-card">
+          <h3>Título</h3>
+        </div>
+        <div class="body-card">
+          <div class="div-icons-contact">
+            <a class="telphone" href="#" title="Contacto teléfonico">
+              <i class="fa fa-phone-alt icon-contact"></i>
+              <label>+52 1 000 000 0000</label>
+            </a>
+            <a class="email" href="#" title="Mail - Gmail">
+              <i class="fa fa-envelope-open-text icon-contact"></i>
+              <label>example@email.com</label>
+            </a>
+            <a class="cv" href="./assets/containers/cv/cv.pdf" target="_blank" title="Consultar y descargar CV">
+              <i class="fa fa-file-pdf icon-contact"></i>
+              <label>Consultar CV</label>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="main-container-hr" />
+    <div class="space-containers" id="education">
+      <h2>Educación</h2>
+      <span class="h2-header"></span>
+    </div>
+    <section class="main-container-section">
+      <div class="card">
+        <div class="header-card">
+          <h3>Instituto</h3>
+          <label>GRADO</label>
+        </div>
+        <div class="body-card">
+          <span class="float-right"><b>Fecha inicio - Fecha fin</b></span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </section>
+    <hr class="main-container-hr" />
+    <div class="space-containers" id="briefcase">
+      <h2>Portafolio</h2>
+      <span class="h2-header"></span>
+    </div>
+    <section class="main-container-section">
+      <!--
+        El elemento div contiene un evento onclick que invoca una función de js para desplegar la ventana modal.
+        pueder ser invocado por cualquier elemento.
+        La función recibe 2 parametros: 1.- id del la ventana modal. 2.- id del botón que cierra la ventana.
+      -->
+      <div class="two-container">
+        <div class="card-briefcase bg-biblioteca" onclick="openModal('modal-bi', 'close-bi');">
+          <div class="card-container">
+            <h3>Título del proyecto</h3>
+            <p>Texto descriptivo</p>
+            <small>Clic para conocer más sobre el contenido.</small>
+          </div>
+        </div>
+        <div class="card-briefcase bg-biblioteca" onclick="openModal('modal-bi', 'close-bi');">
+          <div class="card-container">
+            <h3>Título del proyecto</h3>
+            <p>Texto descriptivo</p>
+            <small>Clic para conocer más sobre el contenido.</small>
+          </div>
+        </div>
+        <div class="card-briefcase bg-biblioteca" onclick="openModal('modal-bi', 'close-bi');">
+          <div class="card-container">
+            <h3>Título del proyecto</h3>
+            <p>Texto descriptivo</p>
+            <small>Clic para conocer más sobre el contenido.</small>
+          </div>
+        </div>
+        <!-- Ventana Modal - Tiene un id que será enviado junto con el id del elemento span al invocar la función desde el elemento div -->
+        <div class="modal" id="modal-bi">
+          <div class="modal-container">
+            <div class="modal-header">
+              <span id="close-bi"><i class="fa fa-times"></i></span>
+              <h3>Título del proyecto</h3>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="main-container-hr" />
+    <div class="space-containers" id="skills">
+      <h2>Habilidades y conocimientos</h2>
+      <span class="h2-header"></span>
+    </div>
+    <section class="main-container-section">
+      <div class="card">
+        <div class="header-card">
+          <h3>Título</h3>
+        </div>
+        <div class="body-card">
+          <div class="two-container">
+            <div class="progressbar-container">
+              <label>Habilidad</label>
+              <progress value="90" max="100"> </progress>
+            </div>
+            <div class="progressbar-container">
+              <label>Habilidad</label>
+              <progress value="90" max="100"></progress>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="header-card">
+          <h3>Título</h3>
+        </div>
+        <div class="body-card">
+          <div class="two-container">
+            <div class="progressbar-container">
+              <label>Habilidad</label>
+              <progress value="90" max="100"> </progress>
+            </div>
+            <div class="progressbar-container">
+              <label>Habilidad</label>
+              <progress value="90" max="100"></progress>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="main-container-hr" />
+    <div class="space-containers" id="awards">
+      <h2>Logros y certificaciones</h2>
+      <span class="h2-header"></span>
+    </div>
+    <section class="main-container-section">
+      <div class="card">
+        <div class="header-card">
+          <h3>Título</h3>
+        </div>
+        <div class="body-card">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="footer-content">
+      <img class="circle-image-footer" src="./assets/containers/img/perfil/imagen_perfil.png" alt="Oscar Reyes" />
+      <label>Oscar Angel Espinoza Reyes &copy</label>
+      <label>Puedes modificar esta plantilla</label>
+      <small>Medios de contacto</small>
+      <div class="div-social-icons">
+        <a class="social-icon" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a class="social-icon" href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="social-icon" href="#"><i class="fa fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- Funciones JS -->
+  <!-- Permite invocar a fontawesome para integrar iconos -->
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>  
+  <script src="./assets/js/functions.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
