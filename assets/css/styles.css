@@ -1,28 +1,31 @@
 :root {
-    --azul-oscuro: #0a192f;
-    --azul-medio: #112240;
-    --azul-claro: #3fb3ff;
-    --blanco: #f0f8ff;
+    --azul-oscuro: #205781;
+    --azul-claro: #a4d8e1;
+    --azul-oscuro-2: #1d1d1d;
+    --azul-medio: #4f959d;
+    --verde-claro: #98d2c0;
+    --amarillo-suave: #ffffff;
+    --texto-oscuro: #1d1d1d;
   }
   
   body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: var(--azul-oscuro);
-    color: var(--blanco);
+    background-color: var(--amarillo-suave);
+    color: var(--texto-oscuro);
   }
   
   header {
-    background-color: var(--azul-medio);
+    background-color: var(--azul-oscuro);
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
   }
   
   header h1 {
     margin: 0;
-    color: var(--azul-claro);
   }
   
   nav ul {
@@ -34,8 +37,13 @@
   }
   
   nav a {
-    color: var(--blanco);
+    color: white;
     text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: var(--verde-claro);
   }
   
   main {
@@ -43,9 +51,9 @@
   }
   
   h2 {
-    color: var(--azul-claro);
-    border-bottom: 2px solid var(--azul-claro);
-    padding-bottom: 0.5rem;
+    color: var(--azul-oscuro);
+    border-left: 4px solid var(--azul-oscuro);
+    padding-left: 0.5rem;
   }
   
   .proyectos-grid {
@@ -57,18 +65,25 @@
   
   .tarjeta {
     background-color: var(--azul-medio);
-    padding: 1rem;
+    border-left: 5px solid var(--azul-oscuro);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(63, 179, 255, 0.2);
+    padding: 1rem;
+    color: white;
+    box-shadow: 0 4px 8px rgba(32, 87, 129, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(32, 87, 129, 0.4);
   }
   
   .tarjeta h3 {
     margin-top: 0;
-    color: var(--azul-claro);
   }
   
   .tarjeta button {
-    background-color: var(--azul-claro);
+    background-color: var(--verde-claro);
     color: var(--azul-oscuro);
     border: none;
     padding: 0.5rem 1rem;
@@ -77,7 +92,7 @@
   }
   
   .tarjeta button:hover {
-    background-color: #66cfff;
+    background-color: var(--amarillo-suave);
   }
   
   form {
@@ -87,25 +102,55 @@
     max-width: 400px;
   }
   
-  form input, form textarea {
+  form input,
+  form textarea {
     padding: 0.5rem;
-    border: none;
+    border: 2px solid var(--azul-medio);
     border-radius: 4px;
+    background-color: white;
   }
   
   form button {
-    background-color: var(--azul-claro);
-    color: var(--azul-oscuro);
+    background-color: var(--azul-oscuro);
+    color: white;
     border: none;
     padding: 0.5rem;
     border-radius: 4px;
     cursor: pointer;
   }
   
+  form button:hover {
+    background-color: var(--verde-claro);
+    color: var(--azul-oscuro);
+  }
+  .boton {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--azul-oscuro);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .boton:hover {
+    background-color: var(--amarillo-suave);
+    color: var(--azul-oscuro);
+  }
   footer {
-    background-color: var(--azul-medio);
+    background-color: var(--azul-oscuro);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+    color: white;
+  }
+  .galeria-img {
+    width: 100%;
+    max-width: 500px;
+    border: 3px solid var(--azul-oscuro);
+    border-radius: 8px;
+    margin-bottom: 1rem;
   }
   
