@@ -5,14 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafolio de Evidencias</title>
   <link rel="stylesheet" href="./assets/css/styles.css" />
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init({
+  publicKey: "rNIXoLSvOhLSEyBI2",
+});
+})();
+</script>
+
 </head>
 <body>
   <header>
     <h1>Portafolio de Proyectos</h1>
     <nav>
       <ul>
-        <li><a href="#proyectos">CV</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a id="abrir-cv">📄 Ver CV</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -25,19 +35,19 @@
         <div class="tarjeta">
           <h3>Aplicación Web para la Asociación Civil Dibujando Sonrisas, Dejando Huellas A.C.</h3>
           <h4>Fecha: 2022-03-04</h4>
-          <p>Descripción breve del proyecto.</p>
+          <p>Aplicación dedicada a mejorar la gestión y organización la Asociación Civil.</p>
           <a href="./projects/DSDH/dsdh.html" class="boton">Ver más</a>
         </div>
         <div class="tarjeta">
           <h3>Videojuego y Sitio Web para empresa Verqor</h3>
           <h4>Fecha: 2024-05-07</h4>
-          <p>Otro proyecto destacado con evidencias.</p>
+          <p>Pagina y Videojuego destinado a enseñar a los clientes de verqor las ventajas de sus servicios.</p>
           <a href="./projects/VERQOR/VERQOR.html" class="boton">Ver más</a>
         </div>
         <div class="tarjeta">
           <h3>Aplicación para Android y Aplicación Web para Asociación Civil Todas Brillamos</h3>
           <h4>Fecha: 2024-10-22</h4>
-          <p>Otro proyecto</p>
+          <p>E-commerce desarrollado para la venta de productos de higiene personal y administración de los mismos.</p>
           <a href="./projects/ZAZIL/zazil.html" class="boton">Ver más</a>
         </div>
       </div>
@@ -50,20 +60,39 @@
         mi conocimiento, y en consecuencia la mejora continua del
         mismo.</p>
     </section>
-
+    <section id="certificaciones">
+      <h2>Certificaciones</h2>
+      <ul>
+        <li><a href="documents/Certificado_Ingles.pdf">HTLM5</a></li>
+        <li><a href="documents/Certificado_Ingles.pdf">INGLES</a></li>
+      </ul>
+    </section>
+    <section id="tecnologias">
+      <h2>Tecnologías</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+        <li>Bootstrap</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </section>
     <section id="contacto">
       <h2>Contacto</h2>
       <form id="formulario-contacto">
-        <input type="text" placeholder="Nombre" required />
-        <input type="email" placeholder="Correo electrónico" required />
-        <textarea placeholder="Mensaje" required></textarea>
+        <input type="text" id="from_name" placeholder="Tu nombre" required>
+        <input type="email" id="from_email" placeholder="Tu correo" required>
+        <textarea id="message" placeholder="Tu mensaje" rows="5" required></textarea>
         <button type="submit">Enviar</button>
-      </form>
+      </form>         
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+    <p>&copy; 2025 José Eduardo Rosas Ponciano</p>
   </footer>
 
   <script src="./assets/js/app.js"></script>
