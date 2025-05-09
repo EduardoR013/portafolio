@@ -7,15 +7,14 @@
   <link rel="stylesheet" href="./assets/css/styles.css" />
   <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-emailjs.init({
-  publicKey: "rNIXoLSvOhLSEyBI2",
-});
-})();
-</script>
-
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "rNIXoLSvOhLSEyBI2",
+      });
+    })();
+    </script>
 </head>
 <body>
   <header>
@@ -52,42 +51,42 @@ emailjs.init({
         </div>
       </div>
     </section>
-
+    
     <section id="sobre-mi">
       <h2>Sobre mí</h2>
       <p>Soy un estudiante apasionado por mi carrera, y por la
         tecnología, disfruto el realizar desafíos que pongan a prueba
         mi conocimiento, y en consecuencia la mejora continua del
         mismo.</p>
-    </section>
-    <section id="certificaciones">
-      <h2>Certificaciones</h2>
-      <ul>
-        <li><a href="documents/Certificado_Ingles.pdf">HTLM5</a></li>
-        <li><a href="documents/Certificado_Ingles.pdf">INGLES</a></li>
-      </ul>
-    </section>
-    <section id="tecnologias">
-      <h2>Tecnologías</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>PHP</li>
-        <li>MySQL</li>
-        <li>Bootstrap</li>
-        <li>React</li>
-        <li>Node.js</li>
-      </ul>
-    </section>
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <form id="formulario-contacto">
-        <input type="text" id="from_name" placeholder="Tu nombre" required>
-        <input type="email" id="from_email" placeholder="Tu correo" required>
-        <textarea id="message" placeholder="Tu mensaje" rows="5" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>         
+      </section>
+      <section id="certificaciones">
+        <h2>Certificaciones</h2>
+        <ul>
+          <li><a href="documents/Certificado_Ingles.pdf">HTLM5</a></li>
+          <li><a href="documents/Certificado_Ingles.pdf">INGLES</a></li>
+        </ul>
+      </section>
+      <section id="tecnologias">
+        <h2>Tecnologías</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+          <li>React</li>
+          <li>NodeJS</li>
+        </ul>
+      </section>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="formulario-contacto">
+          <input type="text" id="from_name" name="from_name" placeholder="Tu nombre" required/>
+          <input type="email" id="from_email" name="from_email" placeholder="Tu correo" required />
+          <textarea id="message" name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+          <button type="submit" id="enviar">Enviar</button>
+        </form>
+        <script src="./assets/js/app.js" defer></script>
     </section>
   </main>
 

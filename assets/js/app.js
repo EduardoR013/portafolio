@@ -13,15 +13,6 @@ document.querySelectorAll("nav a").forEach((link) => {
   });
 });
 
-// Confirmación al enviar formulario
-document
-  .getElementById("formulario-contacto")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("📩 Gracias por tu mensaje. Te responderé pronto.");
-    this.reset(); // Limpia el formulario
-  });
-
 // Efecto de sombra al pasar el mouse sobre tarjetas
 document.querySelectorAll(".tarjeta").forEach((tarjeta) => {
   tarjeta.addEventListener("mouseenter", () => {
@@ -45,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const from_email = document.getElementById("from_email").value;
     const message = document.getElementById("message").value;
     const time = new Date().toLocaleString();
+    console.log(from_name, from_email, message, time);
 
     // Objeto con los datos a enviar
     const templateParams = {
