@@ -88,5 +88,5 @@ function mostrarAlerta(mensaje, tipo) {
 }
 
 document.getElementById("abrir-cv").addEventListener("click", function () {
-  window.open("documents/CV_2025.pdf", "_blank");
+  window.open("documents/CVERP.pdf", "_blank");
 });
